@@ -1,0 +1,234 @@
+@import "base";
+
+.main {
+  margin-top: 100px;
+}
+.logo {
+  width: 90px;
+  height: 80px;
+}
+.nav {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  &_item {
+    height: 55px;
+    width: 200px;
+    font-size: 46px;
+    letter-spacing: 5px;
+  }
+}
+.btn {
+  text-align: center;
+  background-color: $grey-collor;
+  border-radius: 3px;
+  font-family: "Amatic SC";
+}
+.flex-element-logo {
+  width: 14%;
+  text-align: center;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  top: 0;
+  z-index: 10;
+}
+.kreativ {
+  background-image: url("/images/kreativ.png");
+  background-size: cover;
+  margin-bottom: $inner-margin;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  &_text:first-child,
+  &_text:last-child {
+    font-family: "Fuggles", cursive;
+    // font-family: "Great Vibes", cursive;
+    // font-family: "Marina-Regular";
+
+    text-transform: uppercase;
+    font-size: 200px;
+  }
+  &_text:nth-child(2) {
+    font-family: "Amatic SC", cursive;
+    text-transform: uppercase;
+    font-size: 150px;
+    // color: $grey-collor;
+  }
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: $inner-margin;
+  &_wrap {
+    width: 280px;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &_blok {
+    background-color: $grey-collor;
+    height: 280px;
+    border-radius: 3px;
+  }
+  &_img {
+    position: relative;
+    top: calc(150px - 85px);
+    left: 0;
+  }
+  &_name {
+    background-color: $grey-collor;
+    font-size: 46px;
+    height: 70px;
+  }
+}
+
+.karten-font {
+  font-family: "Fuggles", cursive;
+  font-size: 50px;
+  letter-spacing: 8px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.lesezeichen-font {
+  font-family: "Amatic SC", cursive;
+  font-size: 50px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.kunstwerke-font {
+  font-family: "Fuggles", cursive;
+  font-size: 50px;
+  letter-spacing: 8px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.individuelle-font {
+  font-family: "Amatic SC", cursive;
+  font-size: 35px;
+  text-transform: capitalize;
+  position: relative;
+  top: -20px;
+}
+.bestellungen-font {
+  font-family: "Fuggles", cursive;
+  font-size: 50px;
+  letter-spacing: 8px;
+  text-transform: capitalize;
+  font-weight: bold;
+  position: relative;
+  top: -30px;
+}
+.actuall {
+  margin-bottom: $inner-margin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  &_title-wrapp {
+    background-image: url("/images/cloud.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 136px;
+    text-align: center;
+    margin-bottom: -20px;
+    z-index: 10;
+  }
+  &_wrapp {
+    width: 100%;
+    background-image: url("/images/actuall.png");
+  }
+  &_list {
+    padding: 50px;
+    &__item {
+      width: 30%;
+      height: 200px;
+      margin-bottom: 20px;
+      background-color: #fff;
+    }
+  }
+  &_title {
+    position: relative;
+    font-family: "Amatic SC", cursive;
+    // color: #fff;
+    font-size: 100px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+  }
+}
+.list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0;
+}
+footer {
+  background-color: $grey-collor;
+  height: 150px;
+  display: flex;
+}
+.info {
+  width: 15vw;
+  text-align: center;
+}
+.info > a {
+  position: relative;
+  top: calc(7.5vw - 28%);
+  font-family: "Amatic SC", cursive;
+  font-weight: 600;
+  font-size: 40px;
+}
+.info > a::after {
+  content: "";
+  border-bottom: 1px solid #000;
+  // box-shadow: -2px 1px 3px 0px #000;
+  box-shadow: 2px 2px 0 #fff;
+  width: 100px;
+  position: absolute;
+  bottom: 0px;
+  left: -20px;
+}
+.signature {
+  width: 35vw;
+}
+.item-footer {
+  width: 34%;
+  height: 75px;
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Fuggles", cursive;
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.links {
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Amatic SC", cursive;
+  font-size: 46px;
+}
+.wrapp-circle {
+  background-color: $yellow-collor;
+  border: 1px rgb(143, 124, 75) solid;
+  border-radius: 50px;
+  color: rgb(100, 89, 61);
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  padding-top: calc(40px - 4vh);
+}

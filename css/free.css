@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Fuggles&family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Fuggles&family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url("/images/body-bg.png") #fffaed fixed;
+  background-size: contain;
+  height: 100vh;
+  width: 100vw;
+}
+
+a {
+  text-decoration: none;
+  color: #272725;
+}
+
+ul,
+li {
+  padding: 0px;
+  list-style: none;
+  margin: 0px;
+}
+
+button {
+  border: none;
+}
+
+.base-size-content {
+  max-width: 80vw;
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
+}
+
+.shadow {
+  text-shadow: 3px -2px 0 #fff;
+}
+
+@font-face {
+  font-family: Marina-Regular;
+  src: url("/fonts/Marina-Regular.ttf");
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url("/images/body-bg.png") #fffaed fixed;
+  background-size: contain;
+  height: 100vh;
+  width: 100vw;
+}
+
+a {
+  text-decoration: none;
+  color: #272725;
+}
+
+ul,
+li {
+  padding: 0px;
+  list-style: none;
+  margin: 0px;
+}
+
+button {
+  border: none;
+}
+
+.base-size-content {
+  max-width: 80vw;
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
+}
+
+.shadow {
+  text-shadow: 3px -2px 0 #fff;
+}
+
+@font-face {
+  font-family: Marina-Regular;
+  src: url("/fonts/Marina-Regular.ttf");
+}
+.main {
+  margin-top: 100px;
+}
+
+.logo {
+  width: 90px;
+  height: 80px;
+}
+
+.nav {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.nav_item {
+  height: 55px;
+  width: 200px;
+  font-size: 46px;
+  letter-spacing: 5px;
+}
+
+.btn {
+  text-align: center;
+  background-color: #dcd8cc;
+  border-radius: 3px;
+  font-family: "Amatic SC";
+}
+
+.flex-element-logo {
+  width: 14%;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.kreativ {
+  background-image: url("/images/kreativ.png");
+  background-size: cover;
+  margin-bottom: 200px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.kreativ_text:first-child, .kreativ_text:last-child {
+  font-family: "Fuggles", cursive;
+  text-transform: uppercase;
+  font-size: 200px;
+}
+.kreativ_text:nth-child(2) {
+  font-family: "Amatic SC", cursive;
+  text-transform: uppercase;
+  font-size: 150px;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 200px;
+}
+.content_wrap {
+  width: 280px;
+  height: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.content_blok {
+  background-color: #dcd8cc;
+  height: 280px;
+  border-radius: 3px;
+}
+.content_img {
+  position: relative;
+  top: calc(150px - 85px);
+  left: 0;
+}
+.content_name {
+  background-color: #dcd8cc;
+  font-size: 46px;
+  height: 70px;
+}
+
+.karten-font {
+  font-family: "Fuggles", cursive;
+  font-size: 50px;
+  letter-spacing: 8px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.lesezeichen-font {
+  font-family: "Amatic SC", cursive;
+  font-size: 50px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.kunstwerke-font {
+  font-family: "Fuggles", cursive;
+  font-size: 50px;
+  letter-spacing: 8px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.individuelle-font {
+  font-family: "Amatic SC", cursive;
+  font-size: 35px;
+  text-transform: capitalize;
+  position: relative;
+  top: -20px;
+}
+
+.bestellungen-font {
+  font-family: "Fuggles", cursive;
+  font-size: 50px;
+  letter-spacing: 8px;
+  text-transform: capitalize;
+  font-weight: bold;
+  position: relative;
+  top: -30px;
+}
+
+.actuall {
+  margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.actuall_title-wrapp {
+  background-image: url("/images/cloud.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 600px;
+  height: 136px;
+  text-align: center;
+  margin-bottom: -20px;
+  z-index: 10;
+}
+.actuall_wrapp {
+  width: 100%;
+  background-image: url("/images/actuall.png");
+}
+.actuall_list {
+  padding: 50px;
+}
+.actuall_list__item {
+  width: 30%;
+  height: 200px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+.actuall_title {
+  position: relative;
+  font-family: "Amatic SC", cursive;
+  font-size: 100px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+footer {
+  background-color: #dcd8cc;
+  height: 150px;
+  display: flex;
+}
+
+.info {
+  width: 15vw;
+  text-align: center;
+}
+
+.info > a {
+  position: relative;
+  top: calc(7.5vw - 28%);
+  font-family: "Amatic SC", cursive;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.info > a::after {
+  content: "";
+  border-bottom: 1px solid #000;
+  box-shadow: 2px 2px 0 #fff;
+  width: 100px;
+  position: absolute;
+  bottom: 0px;
+  left: -20px;
+}
+
+.signature {
+  width: 35vw;
+}
+
+.item-footer {
+  width: 34%;
+  height: 75px;
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Fuggles", cursive;
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.links {
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Amatic SC", cursive;
+  font-size: 46px;
+}
+
+.wrapp-circle {
+  background-color: #e9cb75;
+  border: 1px #8f7c4b solid;
+  border-radius: 50px;
+  color: #64593d;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  padding-top: calc(40px - 4vh);
+}
+
+.free-wrapper {
+  margin-top: 80px;
+}
+
+.free {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 0px;
+}
+.free_section {
+  width: 32.33%;
+  margin: 0 10px 120px 0;
+  text-align: center;
+}
+.free_section:nth-child(3n) {
+  margin: 0 0 10px 0;
+}
+.free_image-item {
+  height: 65vh;
+  transition: 1s;
+}
+.free_image {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  flex: 1 1 auto;
+}
+.free_btn {
+  margin-top: 30px;
+  padding: 10px 20px;
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  transition: 1s;
+}
+
+.free_image-item:hover {
+  box-shadow: 0 22px 44px 0 rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.free_image:hover {
+  transition: 1s;
+  z-index: 1;
+}
+
+.free_btn:hover {
+  transform: scale(1.2);
+  box-shadow: 0 22px 44px 0 rgba(255, 255, 255, 0.3);
+  text-shadow: 1px -1px 0 #fff;
+  transition: 1s;
+}
+
+/*# sourceMappingURL=free.css.map */

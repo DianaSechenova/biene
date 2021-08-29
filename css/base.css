@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Fuggles&family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url("/images/body-bg.png") #fffaed fixed;
+  background-size: contain;
+  height: 100vh;
+  width: 100vw;
+}
+
+a {
+  text-decoration: none;
+  color: #272725;
+}
+
+ul,
+li {
+  padding: 0px;
+  list-style: none;
+  margin: 0px;
+}
+
+button {
+  border: none;
+}
+
+.base-size-content {
+  max-width: 80vw;
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
+}
+
+.shadow {
+  text-shadow: 3px -2px 0 #fff;
+}
+
+@font-face {
+  font-family: Marina-Regular;
+  src: url("/fonts/Marina-Regular.ttf");
+}
+
+/*# sourceMappingURL=base.css.map */

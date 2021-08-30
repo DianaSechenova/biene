@@ -11,7 +11,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: url("/images/body-bg.png") #fffaed fixed;
+  background: url("../images/body-bg.png") #fffaed fixed;
   background-size: contain;
   height: 100vh;
   width: 100vw;
@@ -95,7 +95,7 @@ button {
 }
 
 .kreativ {
-  background-image: url("/images/kreativ.png");
+  background-image: url("../images/kreativ.png");
   background-size: cover;
   margin-bottom: 200px;
   height: 500px;
@@ -194,7 +194,7 @@ button {
   align-items: center;
 }
 .actuall_title-wrapp {
-  background-image: url("/images/cloud.png");
+  background-image: url("../images/cloud.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 600px;
@@ -205,7 +205,7 @@ button {
 }
 .actuall_wrapp {
   width: 100%;
-  background-image: url("/images/actuall.png");
+  background-image: url("../images/actuall.png");
 }
 .actuall_list {
   padding: 50px;

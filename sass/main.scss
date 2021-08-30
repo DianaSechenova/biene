@@ -41,7 +41,7 @@
   z-index: 10;
 }
 .kreativ {
-  background-image: url("/images/kreativ.png");
+  background-image: url("../images/kreativ.png");
   background-size: cover;
   margin-bottom: $inner-margin;
   height: 500px;
@@ -138,7 +138,7 @@
   justify-content: space-around;
   align-items: center;
   &_title-wrapp {
-    background-image: url("/images/cloud.png");
+    background-image: url("../images/cloud.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 600px;
@@ -149,7 +149,7 @@
   }
   &_wrapp {
     width: 100%;
-    background-image: url("/images/actuall.png");
+    background-image: url("../images/actuall.png");
   }
   &_list {
     padding: 50px;

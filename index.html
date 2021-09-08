@@ -6,37 +6,43 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/main.css">
-  <link rel="preload" href="./fonts/Marina-Regular.ttf" as="font">
   <title>Biene</title>
 </head>
 
 <body>
   <header class="header">
-    <a href="./index.html" class="flex-element-logo">
-      <img src="./images/biene.png" alt="Logo" class="logo">
+    <div class="header_body">
+    <a href="./index.html" class="header_logo">
+      <img src="./images/biene.png" alt="Logo">
     </a>
-    <nav class="nav">
-      <div class="btn nav_item">
-        <a href="./free.html">Free bee`s</a>
-      </div>
-      <div class="btn nav_item">
-        <a href="./about.html">About Me</a>
-      </div>
-      <div class="btn nav_item">
-        <a href="#">bestellen</a>
-      </div>
+    <div class="header_burger">
+      <span></span>
+    </div>
+    <nav class="header_menu">
+      <ul class="header_list">
+        <li class="links">
+          <a href="./free.html" class="header_link">Free bee`s</a>
+        </li>
+        <li class="links">
+          <a href="./about.html" class="header_link cursive">About Me</a>
+        </li>
+        <li class="links">
+          <a href="./individuelle.html" class="header_link _link">individuelle bestellungen</a>
+        </li>
+        <!-- <li class="btn ">
+          <img src="./images/contact.png" alt="Logo" class="logo"></img>
+        </li>  -->
+      </ul>
     </nav>
-    <a href="" class="flex-element-logo">
-      <img src="./images/contact.png" alt="Logo" class="logo"></img>
-    </a>
+  </div>
   </header>
-  <main  class="main base-size-content">
+  <main  class="main">
     <div class="kreativ">
       <span class="kreativ_text">kreativ</span> 
       <span class="kreativ_text shadow" >durch dein</span>  
       <span class="kreativ_text">leben</span>
     </div>
-    <div class="content">
+    <!-- <div class="content">
       <div class="content_wrap">
         <div class="content_blok">
           <a href="#">
@@ -69,20 +75,34 @@
         </div>
         <a href="#" class="content_name"><span class="individuelle-font">individuelle</span><div class="bestellungen-font">bestellungen</div></a>
       </div>
-    </div>
-    <div class="actuall">
-      <div class="actuall_title-wrapp">
-        <span class="actuall_title shadow">aktuall</span>
-      </div>
-      <div class="actuall_wrapp">
-        <ul class="list actuall_list">
-          <li class=" actuall_list__item">photo</li>
-          <li class=" actuall_list__item">photo</li>
-          <li class=" actuall_list__item">photo</li>
-          <li class=" actuall_list__item">photo</li>
-          <li class=" actuall_list__item">photo</li>
-          <li class=" actuall_list__item">photo</li>
-        </ul>
+    </div> -->
+    <div class="actuall-wrapp">
+      <div class="actuall">
+        <div class="actuall_title-wrapp">
+          <span class="actuall_title shadow">aktuall</span>
+        </div>
+        <div class="actuall_list-wrapp bg-yellow">
+          <ul class="list actuall_list">
+            <li class=" actuall_list__item">
+              <img src="./images/FreeBEEs/Aloe_Family.png" alt="">
+            </li>
+            <li class=" actuall_list__item">
+              <img src="./images/FreeBEEs/Aloe_Family.png" alt="">
+            </li>
+            <li class=" actuall_list__item">
+              <img src="./images/FreeBEEs/Aloe_Family.png" alt="">
+            </li>
+            <li class=" actuall_list__item">
+              <img src="./images/FreeBEEs/Aloe_Family.png" alt="">
+            </li>
+            <li class=" actuall_list__item">
+              <img src="./images/FreeBEEs/Aloe_Family.png" alt="">
+            </li>
+            <li class=" actuall_list__item">
+              <img src="./images/FreeBEEs/Aloe_Family.png" alt="">
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </main>
@@ -90,21 +110,21 @@
     <div class="info">
       <a href="#" class="shadow">info`s</a>
     </div>
-    <div class="signature">
+    <!-- <div class="signature">
       <ul class="list">
         <li class="item-footer"><a href="#">photo</a></li>
         <li class="item-footer"><a href="#">photo</a></li>
         <li class="item-footer"><a href="#">photo</a></li>
         <li class="item-footer"><a href="#">photo</a></li>
       </ul>
-    </div>
+    </div> -->
     <div class="links">
       <a href="#" class="wrapp-circle">ig</a>
       <a href="#" class="wrapp-circle">fb</a>
       <a href="#" class="wrapp-circle">email</a>
     </div>
   </footer>
-
+  <script src="./js/header.js"></script>
 </body>
 
 </html>

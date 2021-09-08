@@ -1,141 +1,51 @@
 @import "base";
+@import "header";
 
 .main {
-  margin-top: 100px;
-}
-.logo {
-  width: 90px;
-  height: 80px;
-}
-.nav {
-  width: 70%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  &_item {
-    height: 55px;
-    width: 200px;
-    font-size: 46px;
-    letter-spacing: 5px;
-  }
-}
-.btn {
-  text-align: center;
-  background-color: $grey-collor;
-  border-radius: 3px;
-  font-family: "Amatic SC";
-}
-.flex-element-logo {
-  width: 14%;
-  text-align: center;
-}
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
+  padding-top: 200px;
   width: 100vw;
-  position: fixed;
-  top: 0;
-  top: 0;
-  z-index: 10;
 }
+
 .kreativ {
-  background-image: url("../images/kreativ.png");
-  background-size: cover;
-  margin-bottom: $inner-margin;
-  height: 500px;
+  background-color: rgb(250, 203, 79, 0.8);
+  box-shadow: 0px 0px 10px 1px $grey-collor;
+  border-radius: 5px;
+  margin-bottom: 200px;
+  max-height: 500px;
+  width: 80vw;
+
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   &_text:first-child,
   &_text:last-child {
-    font-family: "Fuggles", cursive;
-    // font-family: "Great Vibes", cursive;
-    // font-family: "Marina-Regular";
-
-    text-transform: uppercase;
-    font-size: 200px;
+    font-family: "Mr De Haviland", cursive;
+    text-transform: capitalize;
+    color: $bg-collor;
+    text-shadow: 3px -4px 1px #000;
+    letter-spacing: 16px;
+    font-size: 250px;
+    margin: -52px 0px -17px 0px;
   }
   &_text:nth-child(2) {
     font-family: "Amatic SC", cursive;
     text-transform: uppercase;
     font-size: 150px;
-    // color: $grey-collor;
-  }
-}
-.content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: $inner-margin;
-  &_wrap {
-    width: 280px;
-    height: 400px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  &_blok {
-    background-color: $grey-collor;
-    height: 280px;
-    border-radius: 3px;
-  }
-  &_img {
-    position: relative;
-    top: calc(150px - 85px);
-    left: 0;
-  }
-  &_name {
-    background-color: $grey-collor;
-    font-size: 46px;
-    height: 70px;
+    margin: -53px 0px 0px 0px;
   }
 }
 
-.karten-font {
-  font-family: "Fuggles", cursive;
-  font-size: 50px;
-  letter-spacing: 8px;
-  text-transform: capitalize;
-  font-weight: bold;
-}
-.lesezeichen-font {
-  font-family: "Amatic SC", cursive;
-  font-size: 50px;
-  letter-spacing: 8px;
-  text-transform: uppercase;
-}
-.kunstwerke-font {
-  font-family: "Fuggles", cursive;
-  font-size: 50px;
-  letter-spacing: 8px;
-  text-transform: capitalize;
-  font-weight: bold;
-}
-.individuelle-font {
-  font-family: "Amatic SC", cursive;
-  font-size: 35px;
-  text-transform: capitalize;
-  position: relative;
-  top: -20px;
-}
-.bestellungen-font {
-  font-family: "Fuggles", cursive;
-  font-size: 50px;
-  letter-spacing: 8px;
-  text-transform: capitalize;
-  font-weight: bold;
-  position: relative;
-  top: -30px;
+.actuall-wrapp {
+  width: 80vw;
 }
 .actuall {
-  margin-bottom: $inner-margin;
+  margin-bottom: 200px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   &_title-wrapp {
     background-image: url("../images/cloud.png");
@@ -144,26 +54,28 @@
     width: 600px;
     height: 136px;
     text-align: center;
-    margin-bottom: -20px;
-    z-index: 10;
+    margin-bottom: -35px;
+    z-index: 8;
   }
-  &_wrapp {
+  &_list-wrapp {
     width: 100%;
-    background-image: url("../images/actuall.png");
+    height: 100%;
   }
   &_list {
     padding: 50px;
     &__item {
       width: 30%;
-      height: 200px;
-      margin-bottom: 20px;
-      background-color: #fff;
+      height: 100%;
+      padding: 0px 0px 10px 0px;
+    }
+    &__item img {
+      width: 100%;
+      padding: 0px;
     }
   }
   &_title {
     position: relative;
     font-family: "Amatic SC", cursive;
-    // color: #fff;
     font-size: 100px;
     letter-spacing: 8px;
     text-transform: uppercase;
@@ -175,35 +87,39 @@
   flex-wrap: wrap;
   margin: 0;
 }
-footer {
+
+.footer {
   background-color: $grey-collor;
   height: 150px;
   display: flex;
+  flex: 0 0 auto;
+  position: relative;
 }
 .info {
-  width: 15vw;
-  text-align: center;
+  width: 50%;
+  align-self: center;
+  padding-left: 5vw;
 }
 .info > a {
   position: relative;
-  top: calc(7.5vw - 28%);
-  font-family: "Amatic SC", cursive;
+  top: 0;
+  font-family: "Mr De Haviland", cursive;
+
+  color: $bg-collor;
+  text-shadow: 3px -1px 1px #000;
   font-weight: 600;
   font-size: 40px;
 }
 .info > a::after {
   content: "";
   border-bottom: 1px solid #000;
-  // box-shadow: -2px 1px 3px 0px #000;
   box-shadow: 2px 2px 0 #fff;
   width: 100px;
   position: absolute;
   bottom: 0px;
   left: -20px;
 }
-.signature {
-  width: 35vw;
-}
+
 .item-footer {
   width: 34%;
   height: 75px;
@@ -215,7 +131,7 @@ footer {
   font-weight: bold;
 }
 .links {
-  width: 50vw;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -229,6 +145,101 @@ footer {
   color: rgb(100, 89, 61);
   width: 80px;
   height: 80px;
-  text-align: center;
-  padding-top: calc(40px - 4vh);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .kreativ {
+    height: 400px;
+  }
+  .kreativ_text:first-child,
+  .kreativ_text:last-child {
+    font-size: 180px;
+  }
+  .kreativ_text:nth-child(2) {
+    font-size: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    padding-top: 100px;
+  }
+  .kreativ {
+    margin-bottom: 113px;
+  }
+  .kreativ {
+    height: 200px;
+  }
+  .kreativ_text:first-child,
+  .kreativ_text:last-child {
+    font-size: 80px;
+  }
+  .kreativ_text:nth-child(2) {
+    font-size: 60px;
+  }
+  .actuall {
+    margin-bottom: 100px;
+  }
+  .actuall_title-wrapp {
+    width: 300px;
+    height: 100px;
+    margin-bottom: -50px;
+  }
+  .actuall_title {
+    font-size: 40px;
+    letter-spacing: 8px;
+    top: 8px;
+  }
+  .actuall_list__item {
+    width: 50%;
+    padding: 0px 10px 10px 10px;
+  }
+  .actuall_list {
+    padding: 20px;
+  }
+  .footer {
+    height: 100px;
+  }
+  .links {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 510px) {
+  .main {
+    padding-top: 80px;
+  }
+  .list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .actuall_list__item {
+    width: 70%;
+    padding: 10px 0px 0px 0px;
+  }
+  .kreativ {
+    margin-bottom: 80px;
+  }
+  .footer {
+    height: 60px;
+  }
+  .links {
+    font-size: 20px;
+  }
+  .wrapp-circle {
+    width: 50px;
+    height: 50px;
+  }
+  .info a {
+    font-size: 24px;
+    text-shadow: 2px -1px 0 #fff;
+  }
+  .info > a::after {
+    box-shadow: 1px 1px 0 #fff;
+    width: 70px;
+  }
 }

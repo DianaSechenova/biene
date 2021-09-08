@@ -1,20 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Fuggles&family=Great+Vibes&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap");
 * {
   box-sizing: border-box;
 }
 
-html {
-  overflow-x: hidden;
-}
-
 body {
-  margin: 0;
-  padding: 0;
   background: url("../images/body-bg.png") #fffaed fixed;
   background-size: contain;
-  height: 100vh;
-  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 a {
@@ -22,31 +18,54 @@ a {
   color: #272725;
 }
 
+p,
 ul,
-li {
-  padding: 0px;
-  list-style: none;
-  margin: 0px;
+li,
+a,
+h1,
+body,
+main {
+  margin: 0;
+  padding: 0;
 }
 
-button {
+ul,
+li {
+  list-style: none;
+}
+
+.btn {
+  text-align: center;
+  background-color: #dcd8cc;
+  border-radius: 3px;
+  font-family: "Amatic SC";
+  cursor: pointer;
   border: none;
 }
 
 .base-size-content {
   max-width: 80vw;
   margin: 0 auto;
-  position: relative;
-  top: 100px;
+  padding-top: 100px;
 }
 
 .shadow {
   text-shadow: 3px -2px 0 #fff;
 }
 
-@font-face {
-  font-family: Marina-Regular;
-  src: url("/fonts/Marina-Regular.ttf");
+.cursive {
+  font-family: "Mr De Haviland", cursive;
+}
+
+.great {
+  font-family: "Amatic SC", cursive;
+}
+
+.bg-yellow {
+  background-color: rgba(233, 203, 117, 0.6);
+  border-radius: 5px;
+  padding: 14px;
+  box-shadow: 0px 0px 10px #dcd8cc;
 }
 
 /*# sourceMappingURL=base.css.map */

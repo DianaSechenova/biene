@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/admin.css">
+  <title>Admin</title>
+</head>
+<body>
+  <main class="free-wrapper base-size-content">
+    <h1 class="h1">Добавить в Бесплатные:</h1>
+    <section >
+      <form action="add_image" method="post" enctype="multipart/form-data" class="form_inner" >
+        <!-- <h1 class="form_title">Оставте коментарий с вашим заказом</h1> -->
+        <label for="name">Добавить Название</label>
+          <input  id="name" type="text" placeholder="Username" required="" class="form_name"/>
+          <label for="name">Добавить Картинку</label>
+          <input type="file" name="image" id="image" class="file form_name">
+
+          <input class="btn submit"  type="submit" value="Сохранить" />
+      </form>
+    </section>
+  </main>
+</body>
+</html>

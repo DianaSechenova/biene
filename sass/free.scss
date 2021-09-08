@@ -1,5 +1,7 @@
 @import "base";
 @import "main";
+@import "header";
+
 .free-wrapper {
   margin-top: 80px;
   margin-bottom: 100px;
@@ -31,14 +33,16 @@
   &_btn {
     margin-top: 30px;
     padding: 10px 20px;
-    box-shadow: 0px 0px 20px 2px rgb(0 0 0 / 30%);
+    box-shadow: 3px 10px 10px 0 rgba(black, 0.3);
     font-size: 18px;
     letter-spacing: 4px;
     font-weight: 600;
     transition: 1s;
   }
 }
-
+.free_image {
+  max-width: 100%;
+}
 .free_image-item:hover {
   box-shadow: 0 22px 44px 0 rgba(black, 0.3);
   transform: scale(1.1);
@@ -50,7 +54,7 @@
 }
 .free_btn:hover {
   transform: scale(1.2);
-  box-shadow: 0 22px 44px 0 rgba(#fff, 0.3);
+  box-shadow: 0 22px 44px 0 rgba(rgb(131, 128, 128), 0.3);
   text-shadow: 1px -1px 0 #fff;
   transition: 1s;
 }

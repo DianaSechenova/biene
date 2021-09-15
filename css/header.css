@@ -44,7 +44,8 @@ li {
 }
 
 .base-size-content {
-  max-width: 80vw;
+  width: 80vw;
+  min-height: 100vh;
   margin: 0 auto;
   padding-top: 100px;
 }
@@ -68,6 +69,52 @@ li {
   box-shadow: 0px 0px 10px #dcd8cc;
 }
 
+ul.pagination {
+  display: inline-block;
+  padding: 0;
+  margin: 20px auto;
+}
+
+ul.pagination li {
+  display: inline;
+}
+
+ul.pagination li a {
+  color: black;
+  background-color: #fff9e7;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+}
+
+.pagination li:first-child a {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.pagination li:last-child a {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+ul.pagination li a.active {
+  background-color: #e9cb75;
+  color: white;
+  border: 1px solid #e9cb75;
+}
+
+ul.pagination li a:hover:not(.active) {
+  background-color: #dcd8cc;
+}
+
+@media (max-width: 375px) {
+  ul.pagination li a {
+    padding: 6px 8px;
+    font-size: 14px;
+  }
+}
 .header {
   background-color: #fff9e7;
   position: fixed;
@@ -92,8 +139,8 @@ li {
 .header_list li {
   margin: 0px 0px 0px 30px;
   box-shadow: 3px 10px 10px 0 rgba(0, 0, 0, 0.3);
-  height: 55px;
-  width: 200px;
+  height: 50px;
+  width: 170px;
   text-align: center;
   background-color: #dcd8cc;
   border-radius: 3px;
@@ -102,7 +149,7 @@ li {
   border: none;
 }
 .header_link {
-  font-size: 46px;
+  font-size: 43px;
   letter-spacing: 5px;
   font-weight: 500;
 }
@@ -112,6 +159,7 @@ li {
   flex: 0 0 65px;
 }
 .header_logo img {
+  object-fit: cover;
   max-width: 100%;
   display: block;
 }
@@ -138,20 +186,87 @@ li {
   transition: 1s;
 }
 
+.footer {
+  background-color: #dcd8cc;
+  height: 150px;
+  display: flex;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.info {
+  width: 50%;
+  align-self: center;
+  padding-left: 5vw;
+}
+
+.info > a {
+  position: relative;
+  top: 0;
+  font-family: "Mr De Haviland", cursive;
+  color: #fff9e7;
+  text-shadow: 3px -1px 1px #000;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.info > a::after {
+  content: "";
+  border-bottom: 1px solid #000;
+  box-shadow: 2px 2px 0 #fff;
+  width: 100px;
+  position: absolute;
+  bottom: 0px;
+  left: -20px;
+}
+
+.item-footer {
+  width: 34%;
+  height: 75px;
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Fuggles", cursive;
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.links {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Amatic SC", cursive;
+  font-size: 46px;
+}
+
+.wrapp-circle {
+  background-color: #e9cb75;
+  border: 1px #8f7c4b solid;
+  border-radius: 50px;
+  color: #64593d;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
 @media (max-width: 1024px) {
   .header_list li {
-    height: 40px;
-    width: 160px;
+    height: 39px;
+    width: 100px;
   }
 
   .header_link {
-    font-size: 30px;
-    letter-spacing: 2px;
+    font-size: 27px;
+    letter-spacing: 1px;
     font-weight: 500;
   }
 
   ._link {
-    font-size: 19px;
+    font-size: 17px;
   }
 }
 .header_burger {
@@ -254,6 +369,29 @@ li {
     text-align: right;
     border: none;
     border-bottom: 1px solid oldlace;
+  }
+
+  .footer {
+    height: 60px;
+  }
+
+  .links {
+    font-size: 20px;
+  }
+
+  .wrapp-circle {
+    width: 50px;
+    height: 50px;
+  }
+
+  .info a {
+    font-size: 24px;
+    text-shadow: 2px -1px 0 #fff;
+  }
+
+  .info > a::after {
+    box-shadow: 1px 1px 0 #fff;
+    width: 70px;
   }
 }
 

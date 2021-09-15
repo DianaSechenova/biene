@@ -42,6 +42,12 @@
 .actuall-wrapp {
   width: 80vw;
 }
+.list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0;
+}
 .actuall {
   margin-bottom: 200px;
   display: flex;
@@ -81,75 +87,9 @@
     text-transform: uppercase;
   }
 }
-.list {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: 0;
-}
 
-.footer {
-  background-color: $grey-collor;
-  height: 150px;
-  display: flex;
-  flex: 0 0 auto;
-  position: relative;
-}
-.info {
-  width: 50%;
-  align-self: center;
-  padding-left: 5vw;
-}
-.info > a {
-  position: relative;
-  top: 0;
-  font-family: "Mr De Haviland", cursive;
 
-  color: $bg-collor;
-  text-shadow: 3px -1px 1px #000;
-  font-weight: 600;
-  font-size: 40px;
-}
-.info > a::after {
-  content: "";
-  border-bottom: 1px solid #000;
-  box-shadow: 2px 2px 0 #fff;
-  width: 100px;
-  position: absolute;
-  bottom: 0px;
-  left: -20px;
-}
 
-.item-footer {
-  width: 34%;
-  height: 75px;
-  text-align: center;
-  padding-top: 20px;
-  font-family: "Fuggles", cursive;
-  font-size: 30px;
-  text-transform: capitalize;
-  font-weight: bold;
-}
-.links {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-family: "Amatic SC", cursive;
-  font-size: 46px;
-}
-.wrapp-circle {
-  background-color: $yellow-collor;
-  border: 1px rgb(143, 124, 75) solid;
-  border-radius: 50px;
-  color: rgb(100, 89, 61);
-  width: 80px;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-}
 
 @media (max-width: 1024px) {
   .kreativ {
@@ -163,6 +103,7 @@
     font-size: 100px;
   }
 }
+
 @media (max-width: 768px) {
   .main {
     padding-top: 100px;
@@ -224,22 +165,5 @@
   .kreativ {
     margin-bottom: 80px;
   }
-  .footer {
-    height: 60px;
-  }
-  .links {
-    font-size: 20px;
-  }
-  .wrapp-circle {
-    width: 50px;
-    height: 50px;
-  }
-  .info a {
-    font-size: 24px;
-    text-shadow: 2px -1px 0 #fff;
-  }
-  .info > a::after {
-    box-shadow: 1px 1px 0 #fff;
-    width: 70px;
-  }
+
 }

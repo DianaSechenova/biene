@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/add.css">
+  <title>Admin</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header_body">
+    <a href="./index.html" class="header_logo">
+      <img src="./images/biene.png" alt="Logo">
+    </a>
+    <div class="header_burger">
+      <span></span>
+    </div>
+    <nav class="header_menu">
+      <ul class="header_list">
+        <li class="links">
+          <a href="./free.html" class="header_link">Free bee`s</a>
+        </li>
+        <li class="links">
+          <a href="./about.html" class="header_link cursive">About Me</a>
+        </li>
+        <li class="links">
+          <a href="./individuelle.html" class="header_link _link">individuelle bestellungen</a>
+        </li>
+        <li class="links">
+          <a href="./admin.html" class="header_link cursive">admin</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+  <div class=" base-size-content">
+    <h1 class="h1">Добавить в Бесплатные:</h1>
+      <form action="add_image" method="post" enctype="multipart/form-data" class="bg-yellow add-form" >
+        <label for="name">Добавить Название
+          <input  id="name" type="text"required="" class=""/>
+        </label>
+        <label for="url">Добавить URL
+        <input name="urt" id="url" type="text"  class="form_name"/>
+        </label>
+          <label for="name">Добавить Картинку
+            <input type="file" name="image" id="image" class="file">
+          </label>
+          <input class="btn submit"  type="submit" value="Сохранить" />
+      </form>
+  </div>
+  <footer class="footer">
+    <div class="info">
+      <a href="#" class="shadow">info`s</a>
+    </div>
+    <div class="links">
+      <a href="#" class="wrapp-circle">ig</a>
+      <a href="#" class="wrapp-circle">fb</a>
+      <a href="#" class="wrapp-circle">email</a>
+    </div>
+  </footer>
+</body>
+</html>

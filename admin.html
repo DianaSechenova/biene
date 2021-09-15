@@ -5,22 +5,92 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/admin.css">
-  <title>Admin</title>
+  <title>Document</title>
 </head>
 <body>
-  <main class="free-wrapper base-size-content">
-    <h1 class="h1">Добавить в Бесплатные:</h1>
-    <section >
-      <form action="add_image" method="post" enctype="multipart/form-data" class="form_inner" >
-        <!-- <h1 class="form_title">Оставте коментарий с вашим заказом</h1> -->
-        <label for="name">Добавить Название</label>
-          <input  id="name" type="text" placeholder="Username" required="" class="form_name"/>
-          <label for="name">Добавить Картинку</label>
-          <input type="file" name="image" id="image" class="file form_name">
-
-          <input class="btn submit"  type="submit" value="Сохранить" />
-      </form>
+  <header class="header">
+    <div class="header_body">
+    <a href="./index.html" class="header_logo">
+      <img src="./images/biene.png" alt="Logo">
+    </a>
+    <div class="header_burger">
+      <span></span>
+    </div>
+    <nav class="header_menu">
+      <ul class="header_list">
+        <li class="links">
+          <a href="./free.html" class="header_link">Free bee`s</a>
+        </li>
+        <li class="links">
+          <a href="./about.html" class="header_link cursive">About Me</a>
+        </li>
+        <li class="links">
+          <a href="./individuelle.html" class="header_link _link">individuelle bestellungen</a>
+        </li>
+        <li class="links">
+          <a href="./admin.html" class="header_link cursive">admin</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  </header>
+  <main  class="base-size-content admin">
+    <section class="btn admin-btn _a">
+      <a href="./add.html">add new picture</a>
+    </section>
+        <table>
+          <thead class=" bg-yellow">
+            <tr>
+              <th>id</th>
+              <th>image</th>
+              <th>alt</th>
+              <th>url</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><img src="./images/FreeBEEs/Tanke.png" alt="" ></td>
+              <td class="admin-text">Aloe gcjgcjc</td>
+              <td><a class="admin-text" href="#">Follow the link</a></td>
+              <td> 
+                <form action="" method="post">
+                  <input type="hidden" name="id" value="{{$post->id}}">
+                  <button type="submit" class="btn admin-btn">delete</button>
+                </form>
+            </td>
+              <td>
+                <form action="" method="post">
+                  <input type="hidden" name="id" value="{{$post->id}}">
+                  <button type="submit" class="btn admin-btn">delete</button>
+              </form>
+              </td>
+            </tr>
+            <tr>
+          </tbody>
+        </table>
     </section>
   </main>
+  <ul class="pagination">
+    <li><a href="#">«</a></li>
+    <li><a href="#">start</a></li>
+    <li><a href="#">1</a></li>
+    <li><a class="active" href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">end</a></li>
+    <li><a href="#">»</a></li>
+  </ul>
+  <footer class="footer">
+    <div class="info">
+      <a href="#" class="shadow">info`s</a>
+    </div>
+    <div class="links">
+      <a href="#" class="wrapp-circle">ig</a>
+      <a href="#" class="wrapp-circle">fb</a>
+      <a href="#" class="wrapp-circle">email</a>
+    </div>
+  </footer>
 </body>
 </html>

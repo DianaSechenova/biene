@@ -1,5 +1,4 @@
 @import "base";
-@import "main";
 @import "header";
 
 .about-title {
@@ -44,6 +43,8 @@
     font-weight: bold;
   }
   &__skroll {
+    background-color: $yellow-collor;
+    padding: 10px;
     height: 40vh;
     overflow-x: scroll;
     overflow-y: scroll;
